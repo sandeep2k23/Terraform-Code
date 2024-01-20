@@ -20,7 +20,7 @@ resource "aws_iam_policy" "sc_ec2_policy" {
         {
           "Effect" : "Allow",
           "Action" : "sts:AssumeRole",
-          "Resource" : "arn:aws:iam::767397920381:role/ScS3Role"
+          "Resource" : "arn:aws:iam::<AccountB ID>:role/ScS3Role"
         }
       ]
   })
