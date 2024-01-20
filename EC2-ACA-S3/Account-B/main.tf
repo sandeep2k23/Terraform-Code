@@ -51,7 +51,7 @@ resource "aws_iam_role" "sc_s3_role" {
           "Sid" : "Statement1",
           "Effect" : "Allow",
           "Principal" : {
-            "AWS" : "arn:aws:iam::889142710491:root"
+            "AWS" : "arn:aws:iam::<AccountA ID>:<Account Name>"
           },
           "Action" : "sts:AssumeRole"
         }
