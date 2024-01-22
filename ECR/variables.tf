@@ -9,13 +9,13 @@ variable "tags" {
   }
 
   validation {
-    condition = can(length(var.tags["OwnerEmail"])) ? (length(var.tags["OwnerEmail"]) >= 2) && (length(regexall("^[\\w-._]+@syngenta.+[a-z]{2,4}$", var.tags["OwnerEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@syngenta.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
-    error_message = "OwnerEmail tag is required, It can't be null or Empty and should be syngenta mail id"
+    condition = can(length(var.tags["OwnerEmail"])) ? (length(var.tags["OwnerEmail"]) >= 2) && (length(regexall("^[\\w-._]+@sandeep.+[a-z]{2,4}$", var.tags["OwnerEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@sandeep.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
+    error_message = "OwnerEmail tag is required, It can't be null or Empty and should be sandeep mail id"
   }
 
   validation {
-    condition = can(length(var.tags["ContactEmail"])) ? (length(var.tags["ContactEmail"]) >= 2) && (length(regexall("^[\\w-._]+@syngenta.+[a-z]{2,4}$", var.tags["ContactEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@syngenta.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
-    error_message = "ContactEmail tag is required, It can't be null or Empty and should be syngenta mail id"
+    condition = can(length(var.tags["ContactEmail"])) ? (length(var.tags["ContactEmail"]) >= 2) && (length(regexall("^[\\w-._]+@sandeep.+[a-z]{2,4}$", var.tags["ContactEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@sandeep.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
+    error_message = "ContactEmail tag is required, It can't be null or Empty and should be sandeep mail id"
   }
 
   validation {
@@ -39,8 +39,8 @@ variable "tags" {
   }
 
   validation {
-    condition = can(length(var.tags["CreatedByEmail"])) ? (length(var.tags["CreatedByEmail"]) >= 2) && (length(regexall("^[\\w-._]+@syngenta.+[a-z]{2,4}$", var.tags["CreatedByEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@syngenta.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
-    error_message = "CreatedByEmail tag is required, It can't be null or Empty and should be syngenta mail id"
+    condition = can(length(var.tags["CreatedByEmail"])) ? (length(var.tags["CreatedByEmail"]) >= 2) && (length(regexall("^[\\w-._]+@sandeep.+[a-z]{2,4}$", var.tags["CreatedByEmail"])) > 0): false //&& can(length(var.tags["OwnerEmail"] >= 2)) //&& can(regex("^[a-z0-9]+@sandeep.+[a-z]{2,4}$", var.tags["OwnerEmail"]))
+    error_message = "CreatedByEmail tag is required, It can't be null or Empty and should be sandeep mail id"
   }
 
 }
